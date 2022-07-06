@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useContext } from 'react';
-import { OptionalEventProperties } from 'react-dom/test-utils';
 import { CitiesContext, City, CityContextType } from '../utils/context/CitiesContext';
 
 interface Toggle {

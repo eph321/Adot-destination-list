@@ -3,7 +3,6 @@ import { CitiesContext } from '../utils/context/CitiesContext';
 import {
     Card,
     Container,
-    Col,
 } from "react-bootstrap";
 import Toggle from '../components/Toggle';
 
