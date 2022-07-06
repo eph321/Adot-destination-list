@@ -6,7 +6,7 @@ import {
 } from "react-bootstrap";
 import Toggle from '../components/Toggle';
 
-export default function DataList() {
+const DataList: React.FunctionComponent = () => {
     const contextValue = useContext(CitiesContext);
     const { cityList } = contextValue;
     return (
@@ -109,3 +109,5 @@ const style: { [key: string]: React.CSSProperties } = {
         width: "25%",
     }
 };
+
+export default DataList;

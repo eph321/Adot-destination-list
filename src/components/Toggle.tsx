@@ -1,13 +1,13 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { CitiesContext, City, CityContextType } from '../utils/context/CitiesContext';
 
-interface Toggle {
+interface ToggleProps {
     id?: string, 
     setStatus?: (status:boolean) => void ,
     status?: boolean
 }
 
-const Toggle : React.FC<Partial<Toggle>> = ({id, setStatus, status}) => {
+const Toggle : React.FC<Partial<ToggleProps>> = ({id, setStatus, status}) => {
     const contextValue = useContext<CityContextType>(CitiesContext);
     const {cityList, updateList} = contextValue;
     const [toggleValue, setToggleValue] = useState<boolean>(status || false);
